@@ -1,4 +1,4 @@
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sccore_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sccore/sccore_{{ version }}.tar.gz
-  sha256: 0bf7ebdcca35abdb810925359853589dca90353f86d5a18f9734ce8b205e78af
+  sha256: 23ca495d55f505c986155a6911858d91ed3b884260852b2251ad7eea03ed8786
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
