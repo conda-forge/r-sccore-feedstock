@@ -1,4 +1,4 @@
-{% set version = "1.0.5" %}
+{% set version = "1.0.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sccore_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sccore/sccore_{{ version }}.tar.gz
-  sha256: 8fe2d2e4de01efaffe3e79aa8b8fc7bbef6b6c6e3fa8f9c1fde56c509f95548a
+  sha256: 76cafd8663661edf4b26133a1bccd514191cc1f61e7506a63b29c16a2a7a78d1
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -29,6 +29,7 @@ requirements:
     - r-rcpparmadillo              # [build_platform != target_platform]
     - r-rcppeigen                  # [build_platform != target_platform]
     - r-rcppprogress               # [build_platform != target_platform]
+    - r-seurat                     # [build_platform != target_platform]
     - r-dplyr                      # [build_platform != target_platform]
     - r-ggplot2                    # [build_platform != target_platform]
     - r-ggrepel                    # [build_platform != target_platform]
@@ -60,6 +61,7 @@ requirements:
     - r-rcpparmadillo
     - r-rcppeigen
     - r-rcppprogress
+    - r-seurat
     - r-dplyr
     - r-ggplot2
     - r-ggrepel
@@ -80,6 +82,7 @@ requirements:
     - r-rcpparmadillo
     - r-rcppeigen
     - r-rcppprogress
+    - r-seurat
     - r-dplyr
     - r-ggplot2
     - r-ggrepel
