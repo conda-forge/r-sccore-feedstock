@@ -29,6 +29,7 @@ requirements:
     - r-rcpparmadillo              # [build_platform != target_platform]
     - r-rcppeigen                  # [build_platform != target_platform]
     - r-rcppprogress               # [build_platform != target_platform]
+    - r-seurat                     # [build_platform != target_platform]
     - r-dplyr                      # [build_platform != target_platform]
     - r-ggplot2                    # [build_platform != target_platform]
     - r-ggrepel                    # [build_platform != target_platform]
@@ -60,6 +61,7 @@ requirements:
     - r-rcpparmadillo
     - r-rcppeigen
     - r-rcppprogress
+    - r-seurat
     - r-dplyr
     - r-ggplot2
     - r-ggrepel
@@ -80,6 +82,7 @@ requirements:
     - r-rcpparmadillo
     - r-rcppeigen
     - r-rcppprogress
+    - r-seurat
     - r-dplyr
     - r-ggplot2
     - r-ggrepel
