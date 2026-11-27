@@ -1,4 +1,4 @@
-{% set version = "1.0.7" %}
+{% set version = "1.0.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sccore_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sccore/sccore_{{ version }}.tar.gz
-  sha256: 266de0f3ed69e28a3998651068a285b7909e540d12333c11e33a3a98a1786b5a
+  sha256: ad0675ae5eb0a743b43e9a782106013cf8253010b541a6a611a91a87bdf78a6b
 
 build:
   number: 0
